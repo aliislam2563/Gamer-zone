@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+    /* primary button  */
+.btn{
+        border-radius: 48px;
+        background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+        padding: 21px 40px;
+        border: none;
+        color: #FFF;
+        font-size: 1.1rem;
+    }
+/* primary text  */
+.discription-color{
+    color: #534C64;
+    font-size: 1.5rem;
+}
+/* header style- Navbar */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 37px 240px;
+}
+
+/* Gamer logo  */
+.gamer-logo{
+    display: flex;
+}
+.gamer-logo span{
+    color:#FF42A5
+}
+.gamer-logo img{
+    height: 100%;
+}
+.logo-name{
+    font-size: 2.8rem;
+    align-items: center;
+    margin-left: 20px;
+}
+/* navbar container  */
+
+.nav-state{
+    display: flex;
+    align-items: center;
+}
+.nav-state li{
+    list-style: none;
+    color: #3C354F;
+    font-size: 1.2rem;
+    margin-right: 32px;
+}
+.follow-us{
+    display: flex;
+    width: 262px;
+    height: 56px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+}
+.follow-us div{
+    padding: 17px 35px;
+}
+
+/* play  style  */
+.play{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.play-content{
+
+    background-image: url(/images/Group\ 14.png);
+    background-repeat: no-repeat;
+    padding: 148px 309px 148px 244px;
+    text-align: left;
+}
+.play-tittle{
+    color: #0B0223;
+    font-size: 3rem;
+}
+.play-head{
+    font-size: 6rem;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 24px;
+}
+
+.play-option{
+    margin-bottom: 17px;
+    align-items: center;
+}
+.go-rogue{
+    background: #4EC5F7;
+    margin-left: 24px;
+}
+
+/* we are gamer  */
+.we-are-gamer{
+    display: flex;
+    align-items: center;
+    gap: 52px;
+    padding: 0 240px 120px 240px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+
+}
+.we-content{
+    text-align: right;
+}
+.we-content h1{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-bottom: 24px;
+}
+.we-details{
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+}
+.we-btn{
+    margin-bottom: 24px;
+}
+.unleash{
+    font-size: 2rem;
+}
+
+/* online games */
+.online-card h1, .online-tittle{
+    text-align: center;
+    font-size: 1.1rem;
+}
+.online-card h1{
+    font-size: 3rem;
+}
+.online-card span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 48px 240px;
+}
+.card-container p{
+    font-size: 1.1rem;
+}
+
+
+/* for mobile(425px) requirement */
+@media screen and (max-width: 425px){
+    /* nav style */
+    .nav-container{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 103px 0 48px 0;
+        text-align: center;
+    }
+    .gamer-logo{
+        margin-bottom: 62px;
+    }
+    .nav-state{
+        flex-direction: column;
+        align-items: center;    
+        gap: 20px;
+    }
+    .follow-us{
+        margin: 48px 0;
+    }
+
+    .play{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-left: 300px;
+
+    }
+    .we-are-gamer{
+        display: flex;
+        flex-direction: column;
+    }
+}
