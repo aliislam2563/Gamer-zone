@@ -15,6 +15,9 @@
         font-size: 1.1rem;
         font-weight: 600;
     }
+.btn:hover{
+    cursor: pointer;
+}
 /* primary text  */
 .discription-color{
     color: #534C64;
@@ -115,6 +118,7 @@
     gap: 52px;
     padding: 0 240px 120px 240px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    margin-bottom: 120px;
 
 }
 .we-content{
@@ -146,20 +150,36 @@ margin-bottom: 24px;
 .online-card h1, .online-tittle{
     text-align: center;
     font-size: 1.1rem;
+    margin-bottom: 16px;
 }
 .online-card h1{
     font-size: 3rem;
 }
 .online-card span{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .card-container{
     display: flex;
     justify-content: space-evenly;
     margin: 48px 240px;
+}
+
+.hover-effect{
+    position: relative;
+    bottom: 444px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    border: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    color: #F948B2; 
 }
 .card-container p{
     font-size: 1.1rem;
@@ -193,6 +213,98 @@ background-clip: text;
     border: 10px solid #FFF;
     background: url(<path-to-image>), lightgray 0px -0.304px / 100% 117.229% no-repeat;
 }
+/* games button style*/
+.games-btn{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:24px;
+    padding: 120px 249px;
+}
+.game-btn{
+    border-radius: 50px;
+    background: #FFF;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.game-btn:hover{
+    border: 1px solid #F948B2;
+    color: #F948B2;
+    cursor: pointer;
+}
+/* footer style */
+footer{
+    background: #0B0223;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    padding: 130px 553px;
+    
+}
+.fotter-logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 66px;
+}
+.fotter-navbar ul{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.fotter-navbar li{
+    list-style: none;
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 56px;
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 74px
+}
+.footer-policy ul{
+    display: flex;
+    gap: 60px;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+.footer-policy li{
+    list-style: none;
 
+    
+}
+.copyright{
+    text-align: center;
+}
+.copyright a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+}
 
+.hd{
+    visibility: hidden;
+}
 
+@media screen and (max-width:425px) {
+    .nav-container , .nav-state , .play, .we-are-gamer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .play{
+        flex-direction: column-reverse;
+        
+    }
+}
